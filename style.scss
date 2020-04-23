@@ -1,0 +1,47 @@
+body{
+    margin:0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    }
+.logo{
+    position: relative;
+    width:360px;
+    height:520px;
+    animation: 4s fadein;
+    .first, .second, .third{
+        position: absolute;
+        width:120px;
+        height:100%;
+        background:#b00612;
+    }
+
+.first{
+    left:0;
+}
+.second{
+    background:#e50815;
+    left:0;
+    z-index: 1;
+    transform-origin: top left;
+    transform:skewX(25deg);
+    box-shadow: 0 0 20px black;
+}
+.third{
+    right:0;
+}
+
+}
+
+@keyframes fadein{
+    0%{
+        opacity: 0;
+        transform:scale(.8);
+    }
+    100%{
+        opacity: 1;
+        transform:scale(1);
+    }
+}
